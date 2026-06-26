@@ -8,7 +8,9 @@ spec:
   source:
     repoURL: https://github.com/Devanshusoni143/app2-config.git
     targetRevision: HEAD
-    path: backend
+    path: app1-helm
+    helm:
+      releaseName: app1
   destination:
     server: https://kubernetes.default.svc
     namespace: app1-ns
